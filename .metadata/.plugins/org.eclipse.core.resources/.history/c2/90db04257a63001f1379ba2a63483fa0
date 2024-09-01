@@ -1,0 +1,19 @@
+			<!DOCTYPE html>
+		<html>
+			<head>
+				<meta charset="ISO-8859-1">
+				<title>Home</title>
+			</head>
+				<div class="menubar_div">
+					<a href="homePage">Home</a>
+					<a href="aboutUsPage">AboutUs</a>
+					<a href="contactUsPage">ContactUs</a>
+					
+					<a href="registerPage">Register</a>
+					<a href="loginPage">Register</a>
+					
+					<a href="logoutPage">Logout</a>
+				</div>
+		</html>
+			
+				

@@ -1,0 +1,20 @@
+package com.example2.controllers;
+import org.springframework.*;
+import org.springframework.web.bind.annotation.GetMapping;
+
+
+public class MyController 
+{
+	@GetMapping("/")
+	public  String openHomePage()
+	{
+		return "home";
+	}
+	
+	@GetMapping("/homepage")
+	public  String openHomePage2()
+	{
+		return "home";
+	}
+	
+}

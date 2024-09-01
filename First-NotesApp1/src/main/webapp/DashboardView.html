@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Notes Dashboard</title>
+<style>
+*
+{
+margin-top:0;
+}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .header {
+    background-color: #338;
+    color: #fff;
+    text-align: center;
+  }
+
+  .navbar {
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    border-radius: 4px;
+  }
+
+  .navbar a:hover {
+    background-color: #666;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    max-width: calc(100% - 40px);
+  }
+
+  h2 {
+    color: #333;
+    margin-top: 0;
+  }
+ 
+
+ 
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Personal Notes Dashboard</h1>
+   
+
+
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">My Notes</a>
+  <a href="#">Create Note</a>
+  <a href="#">Search Notes</a>
+  <a href="#">Categories</a>
+  <a href="#">Settings</a>
+  <a href="logout1">LogOut</a>
+</div>
+</div>
+
+<div class="container">
+
+  <div class="card">
+    <h2>My Notes</h2>
+    <p>Access and manage your personal notes.</p>
+  </div>
+  <div class="card">
+    <h2>Create Note</h2>
+    <p>Create a new note with title and content.</p>
+  </div>
+  <div class="card">
+    <h2>Search Notes</h2>
+    <p>Search your notes by title or content.</p>
+  </div>
+</div>

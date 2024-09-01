@@ -1,0 +1,21 @@
+package com.example2.dao;
+import java.util.*;
+import com.example2.dao.RegisterDao;
+import com.example2.beans.*;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+
+public class RegisterDaoImpl implements RegisterDao
+{
+	
+	public boolean registerDao (Student std)
+	{
+	
+		
+	}
+
+
+}

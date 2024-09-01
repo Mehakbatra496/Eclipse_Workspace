@@ -1,0 +1,8 @@
+package com.example2.dao;
+import java.util.*;
+import com.example2.beans.*;
+public interface RegisterDaoImpl {
+	
+	public boolean registerDao(Student std);
+
+}

@@ -1,0 +1,110 @@
+package in.sp.main.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import in.sp.main.beans.User;
+import in.sp.main.service.UserService;
+
+/* this class contains controllers to handle web requests */
+
+@Controller  // a Spring MVC component
+public class MyController
+{
+/* 	@GetMapping("/") ,	@GetMapping("/addUserPage") ,	@GetMapping("/deleteUserPage") 
+ * 		 these method will handle GET request & load JSP pages*/
+	
+	@GetMapping("/")  
+	public String openIndexPage() 
+	{
+		return "index";
+	}
+	
+	@GetMapping("/addUserPage")	
+	public String openAddUserPage()
+	{
+		return "adduser-page";
+	}
+	
+	@GetMapping("/deleteUserPage")
+	public String deleteUserPage()
+	{
+		return "deleteuserbyid-page";
+	}
+	
+	@GetMapping("/deleteUserByNamePage")
+	public String deleteUserPageByName() 
+	{
+		return "deleteuserbyname-page";
+	}
+
+	
+	@Autowired		// will inject UserService dependency
+	UserService userService; 
+	
+	@PostMapping("/addUserForm") // handle post request to add a user
+	public String addUserForm(@RequestParam("name1") String name,
+								@RequestParam("email1") String email,
+								@RequestParam("gender1") String gender,
+								@RequestParam("city1") String city)
+	{
+		String page="error";
+		
+		User user = new User();
+		user.setName(name);
+		user.setEmail(email);
+		user.setGender(gender);
+		user.setCity(city);
+		
+		boolean status = userService.addUser(user);
+		
+		if(status)
+		{
+			page = "success";
+		}
+		else
+		{
+			page = "error";
+		}
+		
+		return page;
+	}
+	
+	@PostMapping("/deleteUserForm") // handle post request to delete a user
+	public String deleteUser(@RequestParam("id1") int id)
+	{
+		String page = "error";
+		
+		boolean status = userService.deleteUser(id);
+		if(status)
+		{
+			page = "success";
+		}
+		else
+		{
+			page = "error";
+		}
+		return page;
+	}
+	
+	@PostMapping("/deleteUserByNameForm")
+	public String deleteUserByName(@RequestParam("name1") String name)
+	{
+		String page = "error";
+		boolean status = userService.deleteUserByName(name);
+		if(status)
+		{
+			page="success";
+		}
+		else
+			page="fail";
+			
+			
+		return page;
+	}
+	
+	
+}

@@ -1,0 +1,87 @@
+
+package in.sp.main.controllers;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import in.sp.main.beans.Student;
+import in.sp.main.service.LoginService;
+
+/* This class serves as Spring MVC controller
+ * 
+ * 
+ */
+
+@Controller
+public class MyController
+{
+	@GetMapping("/") // this annotation map GET request to path '/'
+	public String openIndexPage()
+	{
+	//mapped to root URL, will return 'index' and it will be '/views/index.jsp
+	//when a user visit the URL '/' then this method will be invoked and handle the request
+	// base URL: http://localhost:8080/, 
+	
+		return "index"; // String 'index' will correspond to the view index.jsp
+	}
+	
+	@GetMapping("/loginPage") // map Get request to path /loginPage
+	public String openLoginPage()
+	{
+		
+		return "login"; // will be login.jsp
+	}
+	
+	@Autowired  // for dependency injection, inject a bean into a class. where bean is
+					// instance of class managed by Spring Container
+	LoginService loginService;
+// it tells Spring to inject an instance of 'LoginService' class into the 'loginService' field
+		
+	@PostMapping("/loginForm") //map HTTP post request to /loginForm URL, when user submits
+	public String login(@RequestParam("email1") String email, @RequestParam("pass1") String password, Model model)
+	{
+	// handle form submission
+	// first argument will bind the 'email1' to the 'email' variable in the method.
+	// Email Id : <input type="text" name="email1" /> <br/> <br/>
+	
+	// second argument is similar
+	
+	// third argument is 'Model model' which allow you to pass data from controller to view
+	// 'model' object to add attributes that will be
+	// accessible in the view (e.g., the user's profile page).	
+		
+		String page = "error"; 
+		
+		List<Student> students_list = loginService.loginService(email, password);
+	// calls loginService method and pass arguments( email , password)
+	// loginService will interact with the DB to verify whether provided email, pass exist
+	//  this list should contain either one student or be empty if the login fails.	
+		
+		if(students_list.size() != 0) 
+		{
+			model.addAttribute("model_student", students_list.get(0)); 
+			//this line adds first student line from the student_list to the 'model object'
+			//'model_statement' will refer to this student in view profile.jsp
+			page = "profile"; // will be profile.jsp
+			
+		}
+		else
+		{
+			page = "error"; // will be error.jsp
+		}
+		return page; // return value of page and Spring will render the corresponding view 
+		// as /views/profile.jsp or /views/error.jsp  ( see in application.properties)
+	}
+}
+
+
+
+
+
+
+

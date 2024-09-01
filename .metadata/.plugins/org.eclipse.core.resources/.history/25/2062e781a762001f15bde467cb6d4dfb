@@ -1,0 +1,19 @@
+spring.mvc.view.prefix=/views/  
+spring.mvc.view.suffix=.jsp
+
+#---------- when returning a view from the controller, spring will look for the 
+# corresponding jsp files in the /views/ directory with the .jsp suffix
+
+server.port=0
+# select a random available port
+
+
+#--------database details------------
+spring.datasource.url=jdbc:mysql://localhost:3306/spring_jdbc
+
+#---- JDBC url for mysql database
+
+
+spring.datasource.username=mehak
+spring.datasource.password=111
+# username and password to connect with the mysql database

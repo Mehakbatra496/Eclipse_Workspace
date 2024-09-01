@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DatabaseConnection.java&apos; to &apos;java&apos;&#x0A;- Original project: &apos;aaa&apos;&#x0A;- Destination element: &apos;java&apos;&#x0A;- Original element: &apos;DatabaseConnection.java&apos;" description="Copy file" element1="JDBC1/src/main/java/DatabaseConnection.java" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1721416164606" target="/JDBC2/src/main/java" units="0" version="1.0"/>
+</session>

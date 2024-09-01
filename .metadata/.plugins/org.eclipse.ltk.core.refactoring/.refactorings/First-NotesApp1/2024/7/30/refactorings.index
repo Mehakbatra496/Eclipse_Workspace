@@ -1,0 +1,26 @@
+1721582124416	Delete element
+1721582200357	Move 'index.html' to 'webapp'
+1721582324984	Delete element
+1721582355564	Delete element
+1721584385285	Move 'web.xml' to 'webapp'
+1721584433092	Move 'web.xml' to 'WEB-INF'
+1721588963815	Rename resource 'HelloServlet.java'
+1721589001678	Rename resource 'CheckCookieFirst.java'
+1721589848323	Delete element
+1721739189468	Rename compilation unit 'HelloServlet.java'
+1721739473372	Move 'DashboardView2.html' to 'webapp'
+1721753436158	Delete element
+1721753592931	Move 'search_note.jsp' to 'META-INF'
+1721753649916	Move 'search_note.jsp' to 'WEB-INF'
+1721753658957	Move 'create_note.jsp' to 'META-INF'
+1721753671724	Move 'create_note.jsp' to 'WEB-INF'
+1721753703582	Move 3 resources to 'webapp'
+1721754022476	Move 'controller' to 'notes'
+1721754028784	Move 'dao' to 'notes'
+1721754033505	Move 'model' to 'notes'
+1721755852461	Rename resource 'create_note.jsp'
+1721755862576	Rename resource 'c.jsp'
+1721755897793	Rename resource 'createNotes.jsp'
+1721826725509	Rename resource 'DashboardView2.html'
+1721826828654	Rename resource 'DashboardView2.jsp'
+1721827141776	Move 'DashboardView2.jsp' to 'webapp'

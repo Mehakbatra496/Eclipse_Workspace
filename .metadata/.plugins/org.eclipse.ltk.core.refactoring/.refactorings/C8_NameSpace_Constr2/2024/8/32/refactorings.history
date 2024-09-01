@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;C9_NameSpace_Di_JavaConfigFile/src&apos;&#x0A;- Original project: &apos;C8_NameSpace_Constr2&apos;&#x0A;- Destination element: &apos;C9_NameSpace_Di_JavaConfigFile/src&apos;&#x0A;- Original elements:&#x0A;     C8_NameSpace_Constr2/src/MyResources&#x0A;     C8_NameSpace_Constr2/src/MyBeanFolder&#x0A;     C8_NameSpace_Constr2/src/MyMainClass_Container" description="Copy packages" destination="=C9_NameSpace_Di_JavaConfigFile/src" element1="/src&lt;MyResources" element2="/src&lt;MyBeanFolder" element3="/src&lt;MyMainClass_Container" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1723014956044" version="1.0"/>
+</session>

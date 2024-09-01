@@ -1,0 +1,27 @@
+package in.sp.main;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/*
+ * 
+ *  Contains main method which is the entry point of the application 
+ * 
+ * SpringApplication.run() is the method provided by Spring Boot Framework, used to launch
+ *  a spring boot application
+ *  
+ * first argument-> SpringbootJdbcDemo1Application.class as it is annotated with @SpringBootApplication
+ *  , it indicate that it is main class of the Spring Boot Application
+ *  
+ * second argument-> args, passes any command line argument to spring Application
+ *  
+ *  
+ **/
+@SpringBootApplication
+public class SpringbootJdbcDemo1Application 
+{
+	public static void main(String[] args)
+	{
+		SpringApplication.run(SpringbootJdbcDemo1Application.class, args);
+	}
+}

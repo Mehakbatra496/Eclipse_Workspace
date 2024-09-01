@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/javax_annotation-api-1_2_lyst7579.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/slf4j-api-2.0.6.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-aop-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-beans-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-context-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-expression-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-jdbc-6.1.11-javadoc.jar"/>
+	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-core-6.0.10 (1).jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/classes" path="src/main/java">
+		<attributes>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+		<attributes>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

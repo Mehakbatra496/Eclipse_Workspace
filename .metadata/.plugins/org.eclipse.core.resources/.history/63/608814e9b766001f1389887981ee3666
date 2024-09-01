@@ -1,0 +1,26 @@
+package in.sp.main.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import in.sp.main.beans.User;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
+
+public interface UserDao extends JpaRepository<User, Integer>
+{
+	/*JpaRepository is a part of Spring Data JPA and provides 
+	 *various methods for CRUD (Create, Read, Update, Delete) operations.
+	 *
+ * It provide standard methods to manage entities such as 'save','findById', 'findAll', 'deleteById'
+	 * method signature for save  -----------  <S extends T> S save(S entity);
+	 * 	save() method is of CrudRepository which is the superclass of JpaRepository
+	 * 	save()-- will insert or update entities in the DB
+	 * 
+	 */
+	
+	// i can create a custom method to delete a user by name
+    //void deleteByName(String name); 
+	@Query("DELETE FROM User u WHERE u.name = :name")
+	void deleteByName(@Param("name") String name);
+
+}

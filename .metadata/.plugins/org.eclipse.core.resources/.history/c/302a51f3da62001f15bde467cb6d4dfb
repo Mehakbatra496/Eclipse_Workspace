@@ -1,0 +1,14 @@
+package in.sp.main.dao;
+
+import java.util.List;
+
+import in.sp.main.beans.Student;
+
+//Interacts with the database to retrieve or manipulate data based on the 
+// service layer's requests.
+
+public interface LoginDao
+{
+	public List<Student> loginDao(String email, String password);
+}
+

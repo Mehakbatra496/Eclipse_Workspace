@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-21">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-aop-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-beans-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-context-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-core-5.2.9.RELEASE-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-core-6.0.10 (1).jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-expression-6.0.10.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/spring-jdbc-6.1.11-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/Zar FIles Spring  __6.1/commons-logging-1.2.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Home</title>
+        <style>
+           
+           .menubar_div {background-color: powderblue;}
+           
+        </style>
+    </head>
+
+    <body style="background-color: gray">
+    <h2>We are a private corporation</h2>
+		
+    </body>
+</html>

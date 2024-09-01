@@ -1,0 +1,10 @@
+package com.example2.services;
+import com.example2.beans.Student;
+
+
+public interface RegisterService {
+
+	public boolean registerService(Student std);
+	
+	
+}

@@ -1,0 +1,44 @@
+package com.example2.dao;
+import java.util.*;
+import com.example2.dao.RegisterDao;
+import com.example2.beans.*;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+import org.springframework.beans.factory.annotation.Autowired;
+
+@Repository
+public class RegisterDaoImpl implements RegisterDao
+{
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	
+	@Override
+	public boolean registerDao(Student std)
+	{
+			boolean bb= false;
+			try {
+			String sql= "insert into register2 values(?,?,?,?,?)";
+			int count=jdbcTemplate.update(sql, new Object[] {std.getName(),std.getEmail(), std.getPassword(), std.getCity(), std.getGender()});
+			
+			if(count>0)				
+			{
+				bb= true;
+			}			
+			else
+			{
+				bb= false;
+			}
+		
+		}
+		
+		catch(Exception e)
+		{
+			bb= false;
+			e.printStackTrace();
+		}
+		
+		return bb;
+	}
+
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Factory_Class_Method.java&apos; to &apos;B8_BeanLifeCycle6/src/FactoryFolder&apos;&#x0A;- Original project: &apos;B8_BeanLifeCycle6&apos;&#x0A;- Destination element: &apos;B8_BeanLifeCycle6/src/FactoryFolder&apos;&#x0A;- Original element: &apos;Factory_Class_Method.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;FactoryFolder" element1="/src&lt;{Factory_Class_Method.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1722885881964" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+    
+<html>
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>Home</title>
+        <style>
+           
+           .menubar_div {background-color: powderblue;}
+           
+        </style>
+    </head>
+
+    <body style="background-color: gray">
+    <h2>Login Here</h2>
+     <br>
+		<jsp:include page="header.jsp" />
+    <br>
+    
+		<form action="loginForm" method="post">
+			Email:
+			<input type="text" name="name1"> 
+			<br>
+			Password:
+			<input type="text" name="pass1"> 
+			<br>
+			<input type="submit" value= Login>
+			<br>
+		</form>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+package com.example2.dao;
+import java.util.*;
+
+import org.springframework.jdbc.core.JdbcTemplate;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+import com.example2.beans.*;
+import com.example2.mappers.StudentMapper;
+public class LoginDaoImpl implements LoginDao 
+{
+
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	@Override
+	public List<Student> loginDao(String email, String password)
+	{
+		List<Student> students_list= null;
+		
+		String sql= "select * from register2 where email=? and password=?";		
+		students_list = jdbcTemplate.query(sql, new StudentMapper(), new Object[] {email, password});
+		return student_list;
+		
+		
+	}
+}
+
+

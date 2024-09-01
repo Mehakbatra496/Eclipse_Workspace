@@ -1,0 +1,23 @@
+package com.example2;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.server.ServletWebServerFactory;
+
+
+@SpringBootApplication
+// it's necessary, it enable component scanning and auto-configuration
+// Automatically detects and registers beans within the @Component, @Controller,
+// @Service, and @Repository annotations in the same package and sub-packages where
+// the main class is located.
+
+public class SpringbootLoginRegProfile1Main 
+{
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		SpringApplication.run(SpringbootLoginRegProfile1Main.class, args);
+	}
+
+}
+
+

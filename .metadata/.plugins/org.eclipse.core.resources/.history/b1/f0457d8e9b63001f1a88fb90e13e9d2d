@@ -1,0 +1,14 @@
+package com.example2.services;
+import com.example2.beans.Student;
+import java.util.List;
+
+public interface LoginServiceImpl 
+{
+
+	public List<Student> loginService(String email, String password);
+	
+	List<Student> students_list =loginDao.loginDao(String email, String password);
+	
+	return students_list;
+	
+}

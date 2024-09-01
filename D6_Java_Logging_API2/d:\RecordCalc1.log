@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-08-08T21:09:21.581937718Z</date>
+  <millis>1723151361581</millis>
+  <nanos>937718</nanos>
+  <sequence>0</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>User has provided no. 1 11</message>
+</record>
+<record>
+  <date>2024-08-08T21:09:26.735591777Z</date>
+  <millis>1723151366735</millis>
+  <nanos>591777</nanos>
+  <sequence>1</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>User has provided no. 2 4</message>
+</record>
+<record>
+  <date>2024-08-08T21:09:29.363697912Z</date>
+  <millis>1723151369363</millis>
+  <nanos>697912</nanos>
+  <sequence>2</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>User has provided symbol +</message>
+</record>
+<record>
+  <date>2024-08-08T21:09:29.368592617Z</date>
+  <millis>1723151369368</millis>
+  <nanos>592617</nanos>
+  <sequence>3</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The result obtained is 15</message>
+</record>
+</log>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2024-08-08T21:10:01.594983807Z</date>
+  <millis>1723151401594</millis>
+  <nanos>983807</nanos>
+  <sequence>0</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>User has provided no. 1 12</message>
+</record>
+<record>
+  <date>2024-08-08T21:10:04.325056242Z</date>
+  <millis>1723151404325</millis>
+  <nanos>56242</nanos>
+  <sequence>1</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>User has provided no. 2 3</message>
+</record>
+<record>
+  <date>2024-08-08T21:10:09.113190347Z</date>
+  <millis>1723151409113</millis>
+  <nanos>190347</nanos>
+  <sequence>2</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>User has provided symbol /</message>
+</record>
+<record>
+  <date>2024-08-08T21:10:09.118092309Z</date>
+  <millis>1723151409118</millis>
+  <nanos>92309</nanos>
+  <sequence>3</sequence>
+  <logger>MyCalculator</logger>
+  <level>INFO</level>
+  <class>MyFolder.MyCalculator</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>The result obtained is 4</message>
+</record>
+</log>

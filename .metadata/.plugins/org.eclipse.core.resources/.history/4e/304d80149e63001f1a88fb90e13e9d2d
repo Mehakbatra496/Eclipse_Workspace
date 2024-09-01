@@ -1,0 +1,10 @@
+package com.example2.dao;
+import java.util.*;
+import com.example2.beans.*;
+public class LoginDaoImpl implements LoginDao {
+	
+	public List<Student> loginDao(String email, String password)
+	{
+		
+	}
+}

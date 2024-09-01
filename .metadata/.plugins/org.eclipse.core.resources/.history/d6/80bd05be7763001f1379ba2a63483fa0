@@ -1,0 +1,26 @@
+package com.example2.controllers;
+import org.springframework.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MyController 
+{
+	@GetMapping("/")
+	public  String openHomePage()
+	{
+		return "home";
+	}
+	
+	@GetMapping("/homepage")
+	public  String openHomePage2()
+	{
+		return "home";
+	}
+	
+		@GetMapping("/aboutUsPage")
+	    public String aboutUsPage() 
+		{
+	        return "aboutUs";
+	    }
+}

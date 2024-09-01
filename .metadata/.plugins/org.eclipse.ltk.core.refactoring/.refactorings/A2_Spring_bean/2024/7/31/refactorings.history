@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;A2_Spring_bean/src/com/example/main/MainClass.java&apos; to &apos;Main.java&apos;" description="Rename resource &apos;MainClass.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/com/example/main/MainClass.java" name="Main.java" stamp="1722192415740" updateReferences="true"/>
+</session>

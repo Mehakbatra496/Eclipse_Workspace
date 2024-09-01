@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="0"/>
+			<item key="DIALOG_Y_ORIGIN" value="0"/>
+			<item key="DIALOG_WIDTH" value="613"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|Ubuntu|12.0|0|GTK|1|"/>
+		</section>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/Servers/Tomcat v10.1 Server at localhost-config/server.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="386"/>
+			<item key="DIALOG_Y_ORIGIN" value="37"/>
+			<item key="DIALOG_FONT_NAME" value="1|Ubuntu|12.0|0|GTK|1|"/>
+		</section>
+	</section>
+	<section name="CleanDialogSettings">
+		<item key="TOGGLE_SELECTED" value="false"/>
+		<item key="DIALOG_WIDTH" value="569"/>
+		<item key="DIALOG_HEIGHT" value="410"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|12.0|0|GTK|1|"/>
+		<item key="BUILD_NOW" value="true"/>
+		<item key="BUILD_ALL" value="true"/>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/mehak/eclipse-workspace2/G7_SpringDataJpa1"/>
+			<item value="/home/mehak/eclipse-workspace2/G6_SpringbootDataJpaDemo"/>
+			<item value="/home/mehak/eclipse-workspace2/SpringbootLoginRegProfileApp"/>
+			<item value="/home/mehak/eclipse-workspace2/E6_SpringJdbc1DbCon"/>
+			<item value="/home/mehak/eclipse-workspace/D9_Log4jLogging3"/>
+			<item value="/home/mehak/eclipse-workspace/D8_Log4jLogging2"/>
+			<item value="/home/mehak/eclipse-workspace/LoggingDemo1"/>
+			<item value="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/4. Spring Core Moule/15 Bean Validations&#x0A;/programs/BeanValidations1"/>
+			<item value="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/4. Spring Core Moule/7Bean Life Cycle Deep Explanation - Part 2&#x0A;/programs/6BeanPostProcessorDemo2"/>
+			<item value="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/4. Spring Core Moule/7Bean Life Cycle Deep Explanation - Part 2&#x0A;/programs/5BeanPostProcessorDemo"/>
+			<item value="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/4. Spring Core Moule/7Bean Life Cycle Deep Explanation - Part 2&#x0A;/programs/4ApplicationContextAwareDemo"/>
+			<item value="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/4. Spring Core Moule/7Bean Life Cycle Deep Explanation - Part 2&#x0A;/programs/3BeanFactoryAwareDemo"/>
+			<item value="/home/mehak/Documents/Job/Smart-Programming/Smart_Programming_Adv_Java_Final- Full Copy/4. Spring Core Moule/7Bean Life Cycle Deep Explanation - Part 2&#x0A;/programs/1BeanNameAwareDemo"/>
+			<item value="/home/mehak/BackUp Ecallipse WorkSpace MHk 2/Z_Different_AnnotationDemo4"/>
+			<item value="/home/mehak/BackUp Ecallipse WorkSpace MHk 2/SpringProgram1"/>
+			<item value="/home/mehak/BackUp Ecallipse WorkSpace MHk 2/SpringProgram2"/>
+			<item value="/home/mehak/BackUp Ecallipse WorkSpace MHk 2/A5_CookiesPractice"/>
+		</list>
+		<section name="SmartImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="228"/>
+			<item key="DIALOG_Y_ORIGIN" value="0"/>
+			<item key="DIALOG_WIDTH" value="917"/>
+			<item key="DIALOG_HEIGHT" value="702"/>
+			<item key="DIALOG_FONT_NAME" value="1|Ubuntu|12.0|0|GTK|1|"/>
+		</section>
+	</section>
+</section>

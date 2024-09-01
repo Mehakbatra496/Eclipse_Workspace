@@ -1,0 +1,148 @@
+	package com.example2.controllers;
+	import org.springframework.web.bind.annotation.GetMapping;
+	import org.springframework.stereotype.Controller;
+	import org.springframework.web.bind.annotation.PostMapping;
+	import org.springframework.web.bind.annotation.RequestParam;
+	import java.util.List;
+	import com.example2.services.LoginService;
+	
+	import com.example2.services.RegisterService;
+	import com.example2.beans.Student;
+	import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.web.servlet.error.ErrorController;
+
+import jakarta.servlet.http.HttpSession;
+	import org.springframework.ui.Model;
+	import com.example2.beans.Student;
+	import org.springframework.web.bind.annotation.RequestMapping;
+	import org.springframework.stereotype.Controller;
+	import org.springframework.web.bind.annotation.PostMapping;
+	import org.springframework.web.bind.annotation.RequestParam;
+	import java.util.List;
+	import com.example2.services.LoginService;
+	
+	import com.example2.services.RegisterService;
+	import com.example2.beans.Student;
+	import org.springframework.beans.factory.annotation.Autowired;
+	import jakarta.servlet.http.HttpSession;
+	import org.springframework.ui.Model;
+	import com.example2.beans.Student;
+
+	
+	@Controller
+	public class MyController 
+	{
+		@GetMapping("/")
+		public  String openHomePage()
+		{
+			return "home";
+		}	
+		@GetMapping("/homePage")
+		public  String openHomePage2()
+		{
+			return "home";
+		}	
+		@GetMapping("/aboutUsPage")
+	    public String aboutUsPage() 
+		{
+	        return "aboutUsPage";
+	    }
+		
+		@GetMapping("/contactUsPage")
+	    public String contactUsPage() 
+		{
+	        return "contactUsPage";
+	    }
+		
+		@GetMapping("/logOutPage")
+	    public String logoutPage() 
+		{
+	        return "logOutPage";
+	    }
+		@GetMapping("/registerPage")
+	    public String registerPage() 
+		{
+	        return "registerPage";
+	    }	
+		@GetMapping("/loginPage")
+	    public String loginPage() 
+		{	
+	        return "loginPage";
+		}	
+		
+		@GetMapping("/profilePage")
+		public String openProfilePage()
+		{
+			return "profile-page"; 
+		}
+		
+		
+		@Autowired
+		LoginService loginService;
+		
+		@PostMapping("/loginForm")
+		public String login(@RequestParam("email1") String email, @RequestParam("pass1") String password, HttpSession session, Model model)
+		{
+			String page = "error-page";
+			
+			List<Student> students_list = loginService.loginService(email, password);
+			if(students_list.size() != 0)
+			{
+				session.setAttribute("session_name", students_list.get(0).getName());
+				session.setAttribute("session_email", students_list.get(0).getEmail());
+				session.setAttribute("session_gender", students_list.get(0).getGender());
+				session.setAttribute("session_city", students_list.get(0).getCity());
+	//The session attributes (session_name, session_email, etc.) are set based on the Student
+				//  object retrieved from the database.			
+				page = "profile-page";
+			}
+			else
+			{
+				model.addAttribute("model_message", "Email id and password didnt matched....");
+				model.addAttribute("model_pagename", "login");
+				
+				page = "errorPage";
+			}
+			return page;
+		}
+		
+		@Autowired
+		RegisterService registerService;
+		
+		@GetMapping("/registerForm")
+		public String registerForm2(@RequestParam("name1") String name,@RequestParam("email1") String email, @RequestParam("pass1") String password, @RequestParam("gender1") String gender, @RequestParam("city1") String city)
+		{
+			String page="error-page";
+			Student std= new Student();
+			std.setName(name);
+			std.setEmail(email);
+			std.setCity(city);
+			std.setGender(gender);
+			std.setPassword(password);
+			
+			
+			boolean saved=registerService.registerService(std);
+			System.out.println(saved);
+			
+			if(saved==true)
+			{
+				page= "loginPage";
+				
+			}
+			else
+			{
+				page= "errorPage";
+			}
+			
+			return page;
+		}
+		
+		@Controller
+		public class CustomErrorController implements ErrorController {
+		    @RequestMapping("/error")
+		    public String handleError() {
+		        return "errorPage"; // Custom error JSP page
+		    }
+		}
+		
+	}

@@ -1,0 +1,23 @@
+package com.example2.services;
+import com.example2.beans.Student;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.example2.dao.RegisterDao;
+
+@Service
+public class RegisterServiceImpl implements RegisterService{
+
+	
+	@Autowired
+	RegisterDao registerDao;
+	
+	public boolean registerService(Student std)
+	{
+		boolean bb= registerDao.registerDao(std);
+		return bb;
+	}
+	
+	
+}

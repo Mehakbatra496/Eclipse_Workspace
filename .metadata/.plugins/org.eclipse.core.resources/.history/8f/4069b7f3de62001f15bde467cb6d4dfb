@@ -1,0 +1,10 @@
+package com.example.beans;
+
+public class SpringbootLoginRegProfile1Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
